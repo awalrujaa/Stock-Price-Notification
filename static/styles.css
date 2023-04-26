@@ -50,7 +50,7 @@ label {
 }
 
 input[type="text"],
-input[type="number"] {
+input[type="number"],p {
   padding: 8px;
   font-size: 16px;
   border-radius: 4px;
