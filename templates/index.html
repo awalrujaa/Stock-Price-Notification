@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stock Info</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <script>
+      function displayAlert(message) {
+			alert(message);
+		}
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-1">
+        <img
+          src="../static/FortuneNFreedom.png"
+          alt="FinanceAndFreedom"
+          height="250"
+          width="250"
+          style="
+          border-radius: 50%;"
+        />
+      </div>
+      <!-- <div class="left-2">
+        <img
+          src="../static/FortuneNFreedom.png"
+          alt="FinanceAndFreedom"
+          height="400"
+          width="400"
+          style="
+          border-radius: 50%;"
+        />
+      </div> -->
+      <div class="left-3">
+        <img
+          src="../static/FortuneNFreedom.png"
+          alt="FinanceAndFreedom"
+          height="400"
+          width="400"
+          style="
+          border-radius: 50%;"
+        />
+      </div>
+      <!-- <div class="left-4">
+        <img
+          src="../static/FortuneNFreedom.png"
+          alt="FinanceAndFreedom"
+          height="250"
+          width="250"
+          style="
+          border-radius: 50%;"
+        />
+      </div> -->
+      <div class="left-5">
+        <img
+          src="../static/FortuneNFreedom.png"
+          alt="FinanceAndFreedom"
+          height="200"
+          width="200"
+          style="
+          border-radius: 50%;"
+        />
+      </div>
+      <div class="right">
+        <p id="my-message"></p>
+        <h1 style="text-align: center">Stock Price Notification</h1>
+        <form action="/" method="post">
+          <label for="symbol">Stock Ticker Symbol</label>
+          <input
+            placeholder="AAPL, AMZN, CSCO, DIS, GOOGL, MSFT"
+            type="text"
+            id="symbol"
+            name="symbol"
+          /><br />
+          <label for="threshold">Price Threshold</label>
+          <input type="text" id="threshold" name="threshold" /><br />
+          
+          <button class="my-button" type="submit" value="Submit" onclick="displayAlert('{{ message }}')">
+            <!-- <a href="/result" class="link-style">  -->
+            Submit
+          </button>
+        </a>
+        </form>
+      </div>
+    </div>
+    
+  </body>
+</html>
