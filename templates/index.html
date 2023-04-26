@@ -8,8 +8,8 @@
     />
     <script>
       function displayAlert(message) {
-			alert(message);
-		}
+        alert(message);
+      }
     </script>
   </head>
   <body>
@@ -20,8 +20,7 @@
           alt="FinanceAndFreedom"
           height="250"
           width="250"
-          style="
-          border-radius: 50%;"
+          style="border-radius: 50%"
         />
       </div>
       <!-- <div class="left-2">
@@ -40,8 +39,7 @@
           alt="FinanceAndFreedom"
           height="400"
           width="400"
-          style="
-          border-radius: 50%;"
+          style="border-radius: 50%"
         />
       </div>
       <!-- <div class="left-4">
@@ -60,8 +58,7 @@
           alt="FinanceAndFreedom"
           height="200"
           width="200"
-          style="
-          border-radius: 50%;"
+          style="border-radius: 50%"
         />
       </div>
       <div class="right">
@@ -77,15 +74,14 @@
           /><br />
           <label for="threshold">Price Threshold</label>
           <input type="text" id="threshold" name="threshold" /><br />
-          
-          <button class="my-button" type="submit" value="Submit" onclick="displayAlert('{{ message }}')">
+
+          <button class="my-button" type="submit" value="Submit">
             <!-- <a href="/result" class="link-style">  -->
             Submit
           </button>
-        </a>
+          <p>{{message}}</p>
         </form>
       </div>
     </div>
-    
   </body>
 </html>
